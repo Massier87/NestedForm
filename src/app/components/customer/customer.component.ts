@@ -1,18 +1,16 @@
 import {Component, OnInit} from '@angular/core';
 import {FormArray, FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {Customer} from "./components/customer/customer.interface";
+import {Customer} from "./customer.interface";
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html'
+  selector: 'customer-page',
+  templateUrl: './customer.component.html'
 })
-export class AppComponent implements  OnInit
+export class CustomerComponent implements  OnInit
 {
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
-  }
 
-  /*public myForm: FormGroup;
+  public myForm: FormGroup;
 
   constructor(private _fb: FormBuilder) { }
 
@@ -50,5 +48,5 @@ export class AppComponent implements  OnInit
     // call API to save
     // ...
     console.log(model);
-  }*/
+  }
 }
